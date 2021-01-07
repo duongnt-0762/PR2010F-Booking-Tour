@@ -1,0 +1,43 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.container {
+    width:100%;
+    text-align:center;
+    magin: 50px;
+    background-image: url("");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+
+}
+
+.logo {
+  float:left;
+color: yellow;
+}
+
+.btn_search {
+  display: inline-block;
+  margin:10 auto;
+  width:400px;
+  height: 40px;
+  margin: 75px 50px 75px 100px;
+}
+
+.login {
+  float:right;
+
+}
+.anh1{
+  float: left;
+    margin: 25px 50px 75px 100px;
+}
+.anh2{
+  float: center;
+    margin: 25px 50px 75px 100px;
+}
+.anh3{
+  float: right;
+    margin: 25px 50px 75px 100px;
+}
