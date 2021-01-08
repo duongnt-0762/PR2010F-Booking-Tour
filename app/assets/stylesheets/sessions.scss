@@ -1,0 +1,46 @@
+//
+//
+.dangnhap0 {
+color: inherit !important;
+font-size: 1em !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+margin: 0px !important;
+padding: 0px !important;
+text-align: center;
+}
+.dangnhap1  {
+    -moz-box-flex: 0 !important;
+    overflow: hidden !important;
+    flex: 0 1 auto !important;
+    text-align: center !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+
+}
+.modal-header {
+    -moz-box-pack: justify !important;
+    -moz-box-align: center !important;
+    min-height: 48px !important;
+    display: flex !important;
+    flex: 0 0 auto !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    border-bottom: 1px solid rgb(235, 235, 235) !important;
+    padding: 0px 24px !important;
+    color: rgb(34, 34, 34) !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 800 !important;
+    min-height: 64px !important;
+}
+.center  {
+  margin: auto;
+  width: 80%;
+  border-radius: 25px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.btn-primary{
+  width: 300px;
+}
