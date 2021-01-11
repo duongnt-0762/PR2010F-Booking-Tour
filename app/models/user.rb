@@ -11,7 +11,6 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 },
   	format: { with: VALID_EMAIL_REGEX }, uniqueness: true
   validates :password, presence: true, length: { minimum: 6 }
-
 	has_secure_password
 
 	before_save :downcase_email
@@ -29,7 +28,7 @@ class User < ApplicationRecord
 	end
 
   def remember
-    self.remember_token = User.new_token
+		self.remember_token = User.new_token
     update_attributes remember_digest: User.digest(remember_token)
   end
 
@@ -39,7 +38,7 @@ class User < ApplicationRecord
   end
 
   def forget
-	 	update_attributes remember_digest: nil
+	 	update_attribute(:remember_digest, nil)
   end
 
   def current_user? user

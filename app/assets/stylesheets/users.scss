@@ -6,7 +6,6 @@
     font-weight: 400 !important;
     line-height: 1.375em !important;
     color: #484848 !important;
-    min-height: 48px !important;
     box-sizing: border-box;
 }
 .title{
@@ -19,7 +18,7 @@
     color: rgb(72, 72, 72) !important;
     box-sizing: border-box
 }
-.tk{
+.tk {
     margin: 0px !important;
     overflow-wrap: break-word !important;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
@@ -27,7 +26,6 @@
     font-weight: 800 !important;
     line-height: 1.125em !important;
     color: rgb(72, 72, 72) !important;
-    box-sizing: border-box;
 }
 .name_user {
     margin: 0px !important;
@@ -68,6 +66,7 @@
    border-radius:8px !important;
    text-decoration:none !important;
 
+
 }
 .hopto {
     height: 100% !important;
@@ -77,12 +76,18 @@
 
 .hang_cot{
   width: 33.3333% !important;
-  float: left !important;
   padding-left: 8px !important;
   padding-right: 8px !important;
   min-height: 1px !important;
   position: relative !important;
-  
+
+}
+.user_infor{
+  margin-top: 64px;
+  margin-bottom: 56px;
+  margin-left: 16px;
+  box-sizing: border-box;
+
 }
 .hop9{
     display: flex !important;
@@ -95,4 +100,5 @@
     padding-right: 8px !important;
     min-height: 1px !important;
     position: relative !important;
+    box-sizing: border-box;
 }
