@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  root 'static_pages#home'
+  namespace :admin do
+    get 'static_pages/home'
+    get 'static_pages/help'
+  end
+  root 'home#index'
+  get 'static_pages/index'
   get 'static_pages/about'
-  get 'static_pages/contact'
-  get 'static_pages/home1'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
 end
