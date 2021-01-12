@@ -1,0 +1,84 @@
+
+<nav class="navbar navbar-fixed-top navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to image_tag("DS.jpeg", alt: "Rails logo", width: "200px"),"https://rubyonrails.org/" %>
+    </div>
+
+    <div class="center">
+      <ul class="nav navbar-nav">
+        <li class="home"><h3><a href="#"> Home       </a></h3></li>
+        <ul class="dropdown-menu">
+          <li><%= link_to "Profile", "#" %></li>
+          <li><%= link_to "Settings", '#' %></li>
+          <li class="divider"></li>
+          <li>
+            <%= link_to "Log out", method: :delete %>
+          </li>
+        </ul>
+        <li clas="dattua"><h3><a href="#"> Đặt tour         </a></h3></li>
+        <li class="diem"><h3><a href="#"> Điểm đến hấp dẫn </a></h3></li>
+        <li>
+          <a>
+            <div class="form-group has-feedback">
+              <input type="text" class="form-control inputValidation" placeholder="Tìm kiếm" />
+              <span class="glyphicon glyphicon-search form-control-feedback" onclick="document.forms['frmseach_doc'].action='/index.php/search';document.forms['frmseach_doc'].submit();">
+              </span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <li><a href="#"> <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %> </a></li>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h2>Fading Modal</h2>
+  <p>Add the "fade" class to the modal container if you want the modal to fade in on open and fade out on close.</p>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+
+          <div class="dangnhap1">
+            <div class="dangnhap0">Đăng nhập</div>
+          </div>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <% provide(:title, "Log in") %>
+          <div class="font_dn">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/732/732200.svg" width="25" height="25" class="d-inline-block align-top" alt="">
+            Đăng nhập bằng gmail
+          </div>
+          <div class="bovien">
+            <div class="center">
+              <%= form_for(:session, url: login_path) do |f| %>
+              <%= f.label :email %>
+              <%= f.email_field :email, class: 'form-control' %>
+              <%= f.label :password %>
+              <%= f.password_field :password, class: 'form-control' %>
+              <%= f.label :remember_me, class: "checkbox inline" do %>
+              <%= f.check_box :remember_me %>
+              <span>Remember me on this computer</span>
+              <% end %><br>
+              <%= f.submit "Log in", class: "btn btn-primary" %>
+              <% end %>
+              <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

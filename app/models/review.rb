@@ -1,5 +1,6 @@
 class Review < ApplicationRecord
 	belong_to :user
-	has_many :comment
-	has_many :like
+	has_many :comments
+	has_many :likes
+	has_many :rates
 end
