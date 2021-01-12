@@ -1,9 +1,10 @@
 class CreateBookingTours < ActiveRecord::Migration[6.1]
   def change
     create_table :booking_tours do |t|
-
+      t.integer :user_id
       t.integer :tour_id
-
+      t.integer :stayed
+      t.boolean :status
       t.timestamps
     end
   end
