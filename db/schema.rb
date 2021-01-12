@@ -10,16 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_11_145915) do
-
-  create_table "booking_tours", charset: "utf8", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "tour_id"
-    t.integer "stayed"
-    t.boolean "status"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 2021_01_15_080215) do
 
   create_table "comments", charset: "utf8", force: :cascade do |t|
     t.integer "user_id"
@@ -45,6 +36,15 @@ ActiveRecord::Schema.define(version: 2021_01_11_145915) do
     t.integer "user_id"
     t.integer "tour_id"
     t.integer "quantity"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "requests", charset: "utf8", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "tour_id"
+    t.integer "stayed"
+    t.boolean "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

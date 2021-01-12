@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   namespace :admin do
-    get 'static_pages/home'
-    get 'static_pages/help'
+    get '/home', to: 'static_pages#home'
+    get '/help', to: 'static_pages#help'
+    get 'index', to:'static_pages#index'
   end
-  root 'home#index'
-  get '/home', to: 'static_pages#index'
+  root 'static_pages#index'
+  get '/home', to:'static_pages#index'
   get 'static_pages/about'
   get 'static_pages/contact'
   get 'static_pages/home1'
