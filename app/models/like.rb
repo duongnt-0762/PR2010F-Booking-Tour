@@ -1,5 +1,5 @@
 class Like < ApplicationRecord
-  belong_to :user
-  belong_to :review
-  belong_to :comment
+  belongs_to :user
+  belongs_to :review
+  belongs_to :comment
 end
