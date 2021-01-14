@@ -4,9 +4,8 @@ Rails.application.routes.draw do
     get 'static_pages/help'
   end
   root 'home#index'
-  get 'static_pages/index'
+  get '/home', to: 'static_pages#index'
   get 'static_pages/about'
-
   get 'static_pages/contact'
   get 'static_pages/home1'
   get '/signup', to: 'users#new'
@@ -14,7 +13,5 @@ Rails.application.routes.draw do
   post'/login',to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   resources :users
-
-
-
+  resources :tours
 end
