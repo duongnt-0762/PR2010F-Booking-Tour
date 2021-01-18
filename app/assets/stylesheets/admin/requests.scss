@@ -1,0 +1,80 @@
+.table{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+
+}
+.table-i{
+  width: 25%;
+  border-right: solid;
+  border-color: black;
+  border-color: black;
+  border-width: 1px;
+  background-color: rgb(250, 120, 120);
+  text-align: center;
+}
+.tt{
+  margin-right: 5px;
+  font-weight:bold;
+}
+.infor{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+.infor-i{
+  width: 20%;
+  border-right: solid;
+  border-color: black;
+  border-color: black;
+  border-width: 1px;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.infor-ii{
+  width: 10%;
+  border-color: black;
+  border-color: black;
+  border-width: 1px;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btton{
+  display: inline-block;
+  text-decoration: none;
+  color:#fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btton--future{
+  background-color:#d84465;
+  min-width: 100px;
+  height: 40px;
+  border-radius: 50px;
+}
+.btton--past{
+  background-color:#5bea0b;
+  min-width: 100px;
+  height: 40px;
+  border-radius: 50px;
+}
+.btton--pre{
+  background-color:#ead300;
+  min-width: 80px;
+  height: 40px;
+  border-radius: 50px;
+}

@@ -1,3 +1,46 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.form-login{
+  display: flex;
+}
+.form{
+  margin: auto;
+}
+.bd-form{
+  padding: 32px;
+}
+.frame{
+  display: flex;
+}
+.frame-form{
+  margin: auto;
+  border: 1px solid #B0B0B0;
+  border-radius: 12px;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  overflow: visible;
+}
+._button{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    text-align: center;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    padding: 14px 24px;
+    border: none;
+    background: #E31C5F;
+    color: #FFFFFF;
+    width: 100%;
+  }
+._tick{
+  background-color: red;
+}

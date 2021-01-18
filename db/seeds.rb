@@ -1,10 +1,14 @@
-User.create!(name: "Example User",
-email: "tour@gmail.com",
+User.create!(name: "Admin",
+email: "admin@gmail.com",
 password:"123456",
 password_confirmation: "123456",
 admin:true)
+User.create!(name: "User",
+email: "user@gmail.com",
+password:"123456",
+password_confirmation: "123456")
 # Generate a bunch of additional users.
-19.times do |n|
+18.times do |n|
 name = Faker::Name.name
 email = "example-#{n+1}@railstutorial.org"
 password = "password"
