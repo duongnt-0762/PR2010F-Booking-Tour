@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
+gem 'image_processing'
+gem 'mini_magick'
+gem 'aws-sdk-s3', '1.46.0', require: false
+gem 'active_storage_validations', '0.8.2'
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
