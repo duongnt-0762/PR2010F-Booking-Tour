@@ -13,9 +13,9 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-require("jquery")
-require('admin-lte')
-import "bootstrap"
+require("jquery");
+require('admin-lte');
+import "bootstrap";
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip()
 });

@@ -1,0 +1,21 @@
+<% provide(:title, 'All requests') %>
+<ul class="requests">
+  <h3>All requests</h3>
+  <div class="table">
+    <div class="table-i"><span>Name:</span></div>
+    <div class="table-i"><span>Email:</span></div>
+    <div class="table-i"><span>Tour:</span></div>
+    <div class="table-i"><span>Địa chỉ:</span></div>
+    <div class="table-i"><span>Trạng thái:</span></div>
+  </div>
+  <% @requests.each do |request|%>
+  <div class="infor">
+    <div class="infor-i"><%=request.user.name%></div>
+    <div class="infor-i"><%=request.user.email%></div>
+    <div class="infor-i"><%=request.tour.title%></div>
+    <div class="infor-i"><%=request.tour.address%></div>
+    <div class="infor-ii"><%=request.status%></div>
+    <div class="infor-ii"><%= link_to "View", admin_request_url(request) %></div>
+  </div>
+  <%end%>
+</ul>
