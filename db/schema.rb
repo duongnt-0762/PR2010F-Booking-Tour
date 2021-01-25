@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_18_103411) do
+ActiveRecord::Schema.define(version: 2021_01_20_101050) do
 
   create_table "active_storage_attachments", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -73,6 +73,20 @@ ActiveRecord::Schema.define(version: 2021_01_18_103411) do
     t.integer "user_id"
     t.integer "tour_id"
     t.integer "quantity"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "requests", charset: "utf8", force: :cascade do |t|
+    t.date "day_start"
+    t.date "day_end"
+    t.integer "stayed"
+    t.integer "user_id"
+    t.integer "tour_id"
+    t.integer "price"
+    t.integer "gues"
+    t.integer "payment"
+    t.integer "status", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,40 +1,36 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <div class="body">
-    <div class="body1">
-        <div class="title">
-            <%= @tour.title %>
+  <div class="body1">
+    <div class="title">
+      <%= @tour.title %>
+    </div>
+    <div class="title2">
+      <div class= "rate">Lay tong tin sau</div>
+      <div class="share">
+        <div class="luu">
+          <img src="https://www.flaticon.com/svg/vstatic/svg/1077/1077035.svg?token=exp=1610524655~hmac=0a8b2d7c5ec2dd0a2e5bdc9f7c243f11"with=15px, height=15px> Lưu
         </div>
-        <div class="title2">
-            <div class= "rate">Lay tong tin sau</div>
-            <div class="share">
-                <div class="luu">
-                    <img src="https://www.flaticon.com/svg/vstatic/svg/1077/1077035.svg?token=exp=1610524655~hmac=0a8b2d7c5ec2dd0a2e5bdc9f7c243f11"with=15px, height=15px> Lưu
-                </div>
-            </div>
-        </div>
-    </div> 
+      </div>
+    </div>
+  </div>
 </div>
 <div class="body2">
-    <div class="img-left">
-        <% if @tour.images.any? %>
-            <%= image_tag @tour.images.first %>
-        <% end %>
-    </div>
-
-    <div class="img-right">
-        <% if @tour.images.any? %>
-            <% @tour.images.take(2).each do |image| %>
-                <%= image_tag image %>
-            <% end %>
-        <% else %>
-            <img scr="https://photo-cms-kienthuc.zadn.vn/zoom/800/uploaded/ctvcongdongtre/2020_05_25/7/mo-tiec-chia-tay-doc-than-tram-anh-bi-hoi-lay-chong-that-a-hinh-7.jpg>
-        <% end %>
-
-    </div>   
-
+  <div class="img-left">
+    <% if @tour.images.any? %>
+    <%= image_tag @tour.images.first %>
+    <% end %>
+  </div>
+  <div class="img-right">
+    <% if @tour.images.any? %>
+    <% @tour.images.take(2).each do |image| %>
+    <%= image_tag image %>
+    <% end %>
+    <% else %>
+    <img scr="https://photo-cms-kienthuc.zadn.vn/zoom/800/uploaded/ctvcongdongtre/2020_05_25/7/mo-tiec-chia-tay-doc-than-tram-anh-bi-hoi-lay-chong-that-a-hinh-7.jpg">
+    <% end %>
+  </div>
 </div>
-
 <div class="body3">
-    <%= @tour.content %>
+  <%= @tour.content %>
 </div>
-
-</div>
+<%= link_to "Booking now ", new_request_path(tour_id: @tour.id) ,class: "btn btn-lg btn-danger"%>

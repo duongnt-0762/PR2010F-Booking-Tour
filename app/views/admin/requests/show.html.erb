@@ -1,0 +1,38 @@
+<% provide(:title, 'Request') %>
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-dark">REQUEST</h1>
+      </div><!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a href="http://127.0.0.1:3000/admin/index">Home</a></li>
+          <li class="breadcrumb-item active"><a href="http://127.0.0.1:3000/admin/requests">All requests</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ptt">
+<div><span class="tt">Tên Khách Hàng:</span><%= @request.user.name %></div>
+<div><span class="tt">Email:</span><%= @request.user.email %></div>
+<div><span class="tt">Chuyến đi:</span><%= @request.tour.title %></div>
+<div><span class="tt">Địa điểm:</span><%= @request.tour.address %></div>
+<div><span class="tt">Quy định:</span><%= @request.tour.rules %></div>
+<div id="consider">
+     <%= render 'status_form' %>
+</div>
+</div>
+<div class="sheet">
+  <section>
+    <div class="journey">
+      <h2 class="t-jour">Chuyến đi</h2>
+      <div class="jour">
+        <button  class="btton btton--future">Sắp tới</button>
+        <button  class="btton btton--past">Trước đây</button>
+      </div>
+    </div>
+    <img class="bg" src="../../assets/tour.png">
+  </section>
+</div>
