@@ -1,0 +1,7 @@
+vi:
+  admin:
+    requests:
+      show:
+        accepted:"Đã chấp nhận"
+        rejected:"Đã từ chối"
+        not_set:"Chưa xử lý"

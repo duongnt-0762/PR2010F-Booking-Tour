@@ -8,6 +8,7 @@ class User < ApplicationRecord
 	has_many :booking_tour
 	has_many :rates
 	has_many :likes
+	has_many :requests
 
 	validates :name, presence: true, length: { maximum: 50 }
 	validates :email, presence: true, length: { maximum: 255 },
@@ -32,7 +33,7 @@ class User < ApplicationRecord
 
 	def remember
 		self.remember_token = User.new_token
-		update_attributes remember_digest: User.digest(remember_token)
+		# update_attributes remember_digest: User.digest(remember_token)
 	end
 
 	def authenticated? remember_token
@@ -41,7 +42,7 @@ class User < ApplicationRecord
 	end
 
 	def forget
-		update_attributes remember_digest: nil
+		# update_attributes remember_digest: nil
 	end
 
 	def current_user? user

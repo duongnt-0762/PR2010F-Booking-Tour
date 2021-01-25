@@ -1,18 +1,25 @@
 <% provide(:title, "Log in") %>
-<h1>Log in</h1>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:session, url: login_path) do |f| %>
-    <%= f.label :email %>
-    <%= f.email_field :email, class: 'form-control' %>
-    <%= f.label :password %>
-    <%= f.password_field :password, class: 'form-control' %>
-    <%= f.label :remember_me, class: "checkbox inline" do %>
-    <%= f.check_box :remember_me %>
-    <span>Remember me on this computer</span>
-    <% end %>
-    <%= f.submit "Log in", class: "btn btn-primary" %>
-    <% end %>
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+<div class="frame">
+  <div class="frame-form">
+    <div class="h-form">
+    </div>
+    <div class="bd-form">
+      <div class="form-login">
+        <div class="form">
+          <%= form_for(:session, url: login_path) do |f| %>
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control' %>
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'form-control' %>
+          <%= f.label :remember_me, class: "checkbox inline" do %>
+          <%= f.check_box :remember_me, class:"_tick" %>
+          <span>Remember me on this computer</span>
+          <% end %>
+          <%= f.submit "Tiếp tục", class: "_button" %>
+          <% end %>
+          <p>Bạn chưa có tài khoản? <%= link_to "Đăng ký!", signup_path %></p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

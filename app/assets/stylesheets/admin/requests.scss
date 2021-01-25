@@ -1,0 +1,108 @@
+.table{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+
+}
+.table-i{
+  width: 25%;
+  border-right: solid;
+  border-color: black;
+  border-color: black;
+  border-width: 1px;
+  background-color: rgb(250, 120, 120);
+  text-align: center;
+}
+.tt{
+  margin-right: 5px;
+  font-weight:bold;
+}
+.info{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: solid;
+  border-color: black;
+  border-width: 1px;
+}
+.info-i{
+  width: 20%;
+  padding-top:20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px;
+}
+.info-ii{
+  width: 10%;
+  padding-top:20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px;
+}
+.info-iii{
+  width: 10%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px;
+}
+.btton{
+  display: inline-block;
+  text-decoration: none;
+  color:#fff;
+  border-radius: 50px;
+  border: none;
+  outline:none!important;
+  cursor: pointer;
+}
+.btton--future{
+  background-color:#d84465;
+  min-width: 100px;
+  height: 40px;
+  border-radius: 50px;
+}
+.btton--past{
+  background-color:#5bea0b;
+  min-width: 100px;
+  height: 40px;
+  border-radius: 50px;
+}
+.btton--pre{
+  background-color:#ead300;
+  min-width: 80px;
+  height: 40px;
+  border-radius: 50px;
+}
+.sheet{
+  width: 100%;
+  height: 100%;
+  background:white;
+}
+.ptt{
+  margin-left: 20px;
+  margin-bottom:10px;
+  width: 100%;
+  height: 100%;
+}
+.t-jour{
+  border-top: solid;
+  border-width: 1px;
+  margin-left: 40px;
+  border-color: rgb(221, 221, 221);
+  margin: -4px 20px 10px;
+}
+.jour{
+  padding-bottom: 5px;
+  color: rgb(221, 221, 221);
+  margin: -4px 20px 0px;
+}
+._14i3z6h{
+
+}
