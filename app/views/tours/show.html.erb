@@ -97,3 +97,7 @@
     </section>
   </div>
 </div>
+<div class="body3">
+  <%= @tour.content %>
+</div>
+ <%= link_to "Booking now!", new_request_path(tour_id: @tour.id), class: "btn btn-lg btn-danger" %>

@@ -83,10 +83,14 @@ ActiveRecord::Schema.define(version: 2021_02_24_045047) do
   end
 
   create_table "requests", charset: "utf8", force: :cascade do |t|
+    t.date "day_start"
+    t.date "day_end"
+    t.integer "stayed"
     t.integer "user_id"
     t.integer "tour_id"
-    t.integer "stayed"
-    t.integer "status", default: 0
+    t.integer "gues"
+    t.integer "payment"
+    t.boolean "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -104,7 +108,7 @@ ActiveRecord::Schema.define(version: 2021_02_24_045047) do
     t.string "address"
     t.text "description"
     t.text "content"
-    t.decimal "price", precision: 8, scale: 2
+    t.float "price"
     t.text "house_type"
     t.text "convenient"
     t.text "rules"
