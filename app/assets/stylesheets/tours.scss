@@ -137,12 +137,15 @@
   text-overflow: ellipsis;
 }
 a:link, a:visited {
-  color: black;
-  text-decoration:none !important;
-  cursor: auto;
+  color: rgb(34, 34, 34);
+  text-decoration:none!important;
+  cursor: pointer ;
 }
 a:link:active, a:visited:active {
   color: green;
+}
+.sign-u .a:hover{
+  background: rgb(261, 261, 261);
 }
 .footer-sheet{
   margin-top: 80px;

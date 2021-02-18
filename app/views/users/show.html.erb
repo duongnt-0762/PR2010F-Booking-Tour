@@ -1,11 +1,138 @@
-<% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
+<% provide(:title,'Cài đặt tài khoản - Airbnb') %>
+<div class="fr4mbd">
+  <div class="sh3etp49">
+    <section class="4cc0un7">
+      <div >
+        <h1><div class="_1yrl4d7p"><%= t('.account') %></div></h1>
+        <div class="_1yrl4d7p">
+          <span class="_1p3joam"><strong><%= @user.name %></strong>,</span>
+          <span class="_1p3joam"><%= @user.email %>·</span>
+          <a href="/users/show" class="">
+            <span class="_ba3mo2p"><%= t('.go_to') %></span>
+          </a>
+        </div>
+      </div>
     </section>
-  </aside>
+    <div class="b0dii9o">
+      <div class="b0xy87">
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/card.svg" width="30" height="30" class="d-inline-block align-top" alt=>
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.persional_info') %></span>
+              <div class="cctt9o"><%= t('.content1') %></div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/shield.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.login_security') %></span>
+              <div class="cctt9o"><%= t('.content2') %></div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/cash.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.payments_payouts') %></span>
+              <div class="cctt9o"><%= t('.content3') %></div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/megaphone.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.notifications') %></span>
+              <div class="cctt9o"><%= t('.content4') %></div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/glass.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.privacy_sharing') %></span>
+              <div class="cctt9o"><%= t('.content5') %></div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/setting.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.global_preferences') %></span>
+              <div class="cctt9o"><%= t('.content6') %></div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/fly.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.travel_for_work') %></span>
+              <div class="cctt9o"><%= t('.content7') %></div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/house.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.professional_hosting_tools') %></span>
+              <div class="cctt9o"><%= t('.content8') %></div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/gift.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle"><%= t('.invite_friends') %></span>
+              <div class="cctt9o"><%= t('.content9') %></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

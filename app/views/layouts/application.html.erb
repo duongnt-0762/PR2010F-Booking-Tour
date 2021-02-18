@@ -13,7 +13,6 @@
   <div class="wrapper">
     <%= render "base/header" %>
     <%= render "base/sidebar" %>
-
     <div class="content-wrapper">
       <div class="content container-fluid">
         <div class="container-fluid">
@@ -21,23 +20,20 @@
         </div>
       </div>
     </div>
-
-    <%= render "base/footer" %>
-    <%= render "base/control_sidebar" %>
-    <div>
-    </body>
-    <%else%>
-    <body>
-      <%= render 'layouts/header' %>
-      <div class="body">
-        <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-        <% end %>
-        <%= yield %>
-      </div>
-      <%= render 'layouts/footer' %>
-      <%= link_to "English", locale:"en" %>
-      <%= link_to "Vietnamese", locale:"vi" %>
-    </body>
-    <%end%>
-    </html>
+  </div>
+  <%= render "base/footer" %>
+  <%= render "base/control_sidebar" %>
+</body>
+<%else%>
+<body>
+  <%= render 'layouts/header' %>
+  <div class="body">
+    <% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
+    <%= yield %>
+  </div>
+  <%= render 'layouts/footer' %>
+</body>
+<%end%>
+</html>

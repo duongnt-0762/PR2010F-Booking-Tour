@@ -1,27 +1,27 @@
 <footer class="footer-sh">
     <div class="col-f">
       <section class="col-i">
-        <h4 class="t-col-i">Giới thiệu</h4>
+        <h4 class="t-col-i"><%= t('.about') %></h4>
         <ul class="list">
 
           <li class="list-i">
-            <a href="/d/howairbnbworks" class="text">Phương thức hoạt động của Airbnb</a>
+            <a href="/d/howairbnbworks" class="text"><%= t('.howairbnbworks') %></a>
           </li>
 
           <li class="list-i">
-            <a href="/press/news" class="text">Trang tin tức</a>
+            <a href="/newsroom/news" class="text"><%= t('.newsroom') %></a>
           </li>
 
           <li class="list-i">
-            <a href="https://investors.airbnb.com" class="text">Nhà đầu tư</a>
+            <a href="https://investors.airbnb.com" class="text"><%= t('.investors') %></a>
           </li>
 
           <li class="list-i">
-            <a href="/plus" class="text">Airbnb Plus</a>
+            <a href="/plus" class="text"><%= t('.plus') %></a>
           </li>
 
           <li class="list-i">
-            <a href="/luxury" class="text">Airbnb Luxe</a>
+            <a href="/luxury" class="text"><%= t('.luxury') %></a>
           </li>
 
           <li class="list-i">
@@ -29,41 +29,41 @@
           </li>
 
           <li class="list-i">
-            <a href="/work?s=footer" class="text">Airbnb for Work</a>
+            <a href="/work?s=footer" class="text"><%= t('.work') %></a>
           </li>
 
           <li class="list-i">
-            <a href="/d/olympics" class="text">Thế vận hội</a>
+            <a href="/d/olympics" class="text"><%= t('.olympics') %></a>
           </li>
 
           <li class="list-i">
-            <a href="/careers" class="text">Cơ hội nghề nghiệp</a>
+            <a href="/careers" class="text"><%= t('.careers') %></a>
           </li>
 
         </ul>
       </section>
 
       <section class="col-i">
-        <h4 class="t-col-i">Cộng đồng</h4>
+        <h4 class="t-col-i"><%= t('.community')%></h4>
         <ul class="list">
           <li class="list-i">
-            <a href="/diversity" class="text">Sự đa dạng và Cảm giác thân thuộc</a>
+            <a href="/diversity" class="text"><%= t('.diversity')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/accessibility" class="text">Tiện nghi phù hợp cho người khuyết tật</a>
+            <a href="/accessibility" class="text"><%= t('.accessibility')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/associates?from=footer" class="text">Đối tác liên kết Airbnb</a>
+            <a href="/associates?from=footer" class="text"><%= t('.associates')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/d/covid19relief" class="text">Chỗ ở cho tuyến đầu</a>
+            <a href="/d/covid19relief" class="text"><%= t('.frontline')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/invite?r=6" class="text">Mời bạn bè</a>
+            <a href="/invite?r=6" class="text"><%= t('.invite')%></a>
           </li>
 
           <li class="list-i">
@@ -73,46 +73,63 @@
       </section>
 
       <section class="col-i">
-        <h4 class="t-col-i">Đón tiếp khách</h4>
+        <h4 class="t-col-i"><%= t('.host')%></h4>
         <ul class="list">
 
           <li class="list-i">
-            <a href="/host/homes?from_footer=1" class="text">Cho thuê nhà</a>
+            <a href="/host/homes?from_footer=1" class="text"><%= t('.host_your_home')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/d/onlinehost" class="text">Tổ chức Trải nghiệm trực tuyến</a>
+            <a href="/d/onlinehost" class="text"><%= t('.host_online')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/host/experiences" class="text">Tổ chức trải nghiệm</a>
+            <a href="/host/experiences" class="text"><%= t('.host_experience')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/help/responsible-hosting" class="text">Đón tiếp khách có trách nhiệm</a>
+            <a href="/help/responsible-hosting" class="text"><%= t('.responsible')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/resources" class="text">Trung tâm tài nguyên</a>
+            <a href="/resources" class="text"><%= t('.resources')%></a>
           </li>
 
           <li class="list-i">
-            <a href="/help/community?s=footer" class="text">Trung tâm cộng đồng</a>
+            <a href="/help/community?s=footer" class="text"><%= t('.community_center')%></a>
           </li>
 
         </ul>
       </section>
 
-      <section class="col-i"><h4 class="t-col-i">Hỗ trợ</h4><ul class="list"><li class="list-i"><a href="/d/covidsafety" class="text">Biện pháp ứng phó với đại dịch COVID-19 của chúng tôi</a></li><li class="list-i"><a href="/help?from=footer" class="text">Trung tâm trợ giúp</a></li><li class="list-i"><a href="/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19" class="text">Các tùy chọn hủy</a></li><li class="list-i"><a href="/neighbors" class="text">Hỗ trợ khu dân cư</a></li><li class="list-i"><a href="/trust" class="text">Tin cậy và an toàn</a></li></ul>
+      <section class="col-i"><h4 class="t-col-i"><%= t('.support')%></h4>
+        <ul class="list">
+          <li class="list-i">
+            <a href="/d/covidsafety" class="text"><%= t('.covid')%></a>
+          </li>
+          <li class="list-i">
+            <a href="/help?from=footer" class="text"><%= t('.help')%></a>
+          </li>
+          <li class="list-i">
+            <a href="/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19" class="text"><%= t('.cancellation')%></a>
+          </li>
+          <li class="list-i">
+            <a href="/neighbors" class="text"><%= t('.neighbors')%></a>
+          </li>
+          <li class="list-i">
+            <a href="/trust" class="text"><%= t('.trust_safety')%></a>
+          </li>
+        </ul>
       </section>
 
     </div><div class="f-extend">
       <section class="copyright">
         <div class="ex-left">
-          <div class="ex-l-i">© 2021 Airbnb, Inc. All rights reserved</div>
-          <div class="ex-l-i">Quyền riêng tư</div>
-          <div class="ex-l-i">Điều khoản</div>
-          <div class="ex-l-i">Sơ đồ trang web</div>
+          <div class="ex-l-i">© 2021 Airbnb, Inc. All rights reserved </div>
+          <div class="ex-l-i"><a href="/terms/privacy_policy" class="_o06542u"><%= t('.primacy')%></a></div>
+          <div class="ex-l-i"><a href="/terms" class="_o06542u"><%= t('.terms')%></a></div>
+          <div class="ex-l-i"><a href="/sitemaps/v2" class="_o06542u"><%= t('.sitemaps')%></a></div>
         </div>
         <div class="ex-right">
           <div class="ex-r-i">Tiếng Việt</div>
