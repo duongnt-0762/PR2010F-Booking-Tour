@@ -2,6 +2,7 @@
 <div class="frame">
   <div class="frame-form">
     <div class="h-form">
+      <span class="t3hf0m">Đăng nhập</span>
     </div>
     <div class="bd-form">
       <div class="form-login">
@@ -18,6 +19,48 @@
           <%= f.submit "Tiếp tục", class: "_button" %>
           <% end %>
           <p>Bạn chưa có tài khoản? <%= link_to "Đăng ký!", signup_path %></p>
+          <a href="/auth/facebook">
+            <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+              <div class="_1a2vq1h">
+                <div class="_fb4s8m">
+                  <div class="yc0l">
+                    <img src="../assets/fb.svg" width="30" height="30" alt="">
+                  </div>
+                  <div class="ttvfb" ">
+                    <span class="ttvfb-i">Tiếp tục với Facebook</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+          </a>
+          <a href="/auth/google_oauth2">
+            <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+              <div class="_1a2vq1h">
+                <div class="_fb4s8m">
+                  <div class="yc0l">
+                    <img src="../assets/gg.svg" width="30" height="30" alt="">
+                  </div>
+                  <div class="ttvfb" ">
+                    <span class="ttvfb-i">Tiếp tục với Google</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+          </a>
+          <a href="/auth/github">
+            <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+              <div class="_1a2vq1h">
+                <div class="_fb4s8m">
+                  <div class="yc0l">
+                    <img src="../assets/github.svg" width="30" height="30" alt="">
+                  </div>
+                  <div class="ttvfb" ">
+                    <span class="ttvfb-i">Tiếp tục với GitHub</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+          </a>
         </div>
       </div>
     </div>

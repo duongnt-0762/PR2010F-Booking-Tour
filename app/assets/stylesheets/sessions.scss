@@ -1,10 +1,91 @@
-.checkbox {
-margin-top: -10px;
-span {
-font-weight: normal;
+  .checkbox {
+  margin-top: -10px;
+  span {
+  font-weight: normal;
+  }
+  }
+  #session_remember_me {
+  width: auto;
+  }
+  .h-form{
+  display: flex;
+  margin: 8px;
+  height: 64px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-bottom-color: rgb(222, 222, 222)
+  }
+  .t3hf0m{
+  margin: auto;
+  padding: 8px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 800
+  }
+  .bd-form{
+  padding: 32px;
+  }
+  .frame{
+  display: flex;
+  }
+  .frame-form{
+  margin: auto;
+  border: 1px solid #B0B0B0;
+  border-radius: 12px;
+  width: 40%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  overflow: visible;
+  }
+  ._button{
+  cursor: pointer;
+  display: inline-block;
+  margin: 16px 0;
+  text-align: center;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  padding: 14px 24px;
+  border: none;
+  background: #E31C5F;
+  color: #FFFFFF;
+  width: 100%;
+  }
+  ._tick{
+  background-color: red;
+  }
+._m3o8wbc{
+//   display: block;
+  cursor: text;
+  text-decoration: none;
+  height: 48px;
+  width: 100%;
+  margin: 8px 0;
+  border: 0;
+  outline: none!important;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgb(176, 176, 176) 0px 0px 0px 1px inset;
 }
+._fb4s8m{
+display: flex;
 }
-#session_remember_me {
-width: auto;
-
+.yc0l{
+  margin: auto;
+}
+.ttvfb{
+  width: 100%;
+  display: flex;
+}
+.ttvfb-i{
+  margin: auto;
+  padding: 8px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
 }

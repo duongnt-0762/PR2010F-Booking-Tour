@@ -1,11 +1,138 @@
-<% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
+<% provide(:title,'Cài đặt tài khoản - Airbnb') %>
+<div class="fr4mbd">
+  <div class="sh3etp49">
+    <section class="4cc0un7">
+      <div >
+        <h1><div class="_1yrl4d7p"><%= t('users.show.account') %></div></h1>
+        <div class="_1yrl4d7p">
+          <span class="_1p3joam"><strong><%= @user.name %></strong>,</span>
+          <span class="_1p3joam"><%= @user.email %>·</span>
+          <a href="/users/show" class="">
+            <span class="_ba3mo2p">Truy cập hồ sơ</span>
+          </a>
+        </div>
+      </div>
     </section>
-  </aside>
+    <div class="b0dii9o">
+      <div class="b0xy87">
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/card.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Đăng nhập và bảo mật.</span>
+              <div class="cctt9o">Cập nhật mật khẩu và bảo mật tài khoản của bạn.</div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/shield.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Đăng nhập và bảo mật.</span>
+              <div class="cctt9o">Cập nhật mật khẩu và bảo mật tài khoản của bạn.</div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/cash.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Thanh toán và chi trả.</span>
+              <div class="cctt9o">Tìm hiểu lại các khoản thanh toán, chi trả, phiếu giảm giá,thẻ quà tặng và thuế.</div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/megaphone.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Thông báo.</span>
+              <div class="cctt9o">Chọn tùy chọn thông báo và cách bạn muốn được liên hệ.</div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/glass.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Quyền riêng tư và chia sẻ.</span>
+              <div class="cctt9o">Kiểm soát các ứng dụng và được kết nối,nội dung bạn chia sẻ và những người thấy nó.</div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/setting.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Lựa chon chung.</span>
+              <div class="cctt9o">Đặt ngôn ngữ,loại tiền tệ và múi giờ mặc định của bạn.</div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/fly.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Đi công tác.</span>
+              <div class="cctt9o">Thêm email công việc để hưởng các lợi ích cho chuyến đi công tác.</div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/house.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Đón tiếp khách chuyên nghiệp.</span>
+              <div class="cctt9o">Nhận các công cụ chuyên nghiệp nếu bạn quản lý một số chỗ ở trên Airbn.</div>
+            </a>
+          </div>
+        </div>
+        <div class="_1m936ew">
+          <div class="_15wihn">
+            <a class="lynt0" href="#">
+              <div class="t49yc0l">
+                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 32px; width: 32px; display: block; fill: rgb(96, 182, 181);">
+                  <img src="../../assets/gift.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </svg>
+              </div>
+              <span class="t1tle">Mời bạn bè.</span>
+              <div class="cctt9o">Khi bạn bè của bạn tham gia họ sẽ được giảm giá đến $65 cho một đặt phòng/chỗ đủ điều kiện.</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

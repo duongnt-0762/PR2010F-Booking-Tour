@@ -9,15 +9,30 @@ class User < ApplicationRecord
 	has_many :rates
 	has_many :likes
 	has_many :requests
+	has_many :oauth
+
 
 	validates :name, presence: true, length: { maximum: 50 }
 	validates :email, presence: true, length: { maximum: 255 },
 	format: { with: VALID_EMAIL_REGEX }, uniqueness: true
-	validates :password, presence: true, length: { minimum: 6 }
 
 	has_secure_password
+	validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
 	before_save :downcase_email
+
+
+
+	def self.from_omniauth(auth)
+  where(auth.(:provider, :uid)).first_or_initialize.tap do |user|
+    user.provider = auth.provider
+    user.user_id = auth.user_id
+    user.name = auth.info.name
+    user.email = auth.info.email
+    user.oauth_token = auth.credentials.token
+    user.save!
+  end
+end
 
 	class << self
 		def digest(string)

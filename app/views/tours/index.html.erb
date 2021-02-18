@@ -43,16 +43,15 @@
       <% @tours.each do |tour|%>
       <div class="content-tour-i">
         <div class="mar-container">
-          <a href="#">
-
-            <div class="frame-image">
-              <img class="image" src="../assets/house.png">
-            </div>
-            <div class="star"><img src="../assets/star.svg" width="15px"height="15px"> 4.50 <span>(12)</span></div>
-            <div class="infor"><%= tour.title %><%= tour.address %></div>
-            <div class="infor"><span><%= tour.description %></span></div>
-            <div class="infor"><span class="text">$<span><%= tour.price %>/đêm</span></span></div>
-          </a>
+          <%= link_to tour do %>
+          <div class="frame-image">
+            <img class="image" src="../assets/house.png">
+          </div>
+          <div class="star"><img src="../assets/star.svg" width="15px"height="15px"> 4.50 <span>(12)</span></div>
+          <div class="infor"><%= tour.title %><%= tour.address %></div>
+          <div class="infor"><span><%= tour.description %></span></div>
+          <div class="infor"><span class="text">$<span><%= tour.price %>/đêm</span></span></div>
+          <% end %>
         </div>
       </div>
       <%end%>

@@ -3,6 +3,7 @@ class ToursController < ApplicationController
     @tours = Tour.paginate(page: params[:page]).per_page(20)
   end
 	def show
+		@tours = Tour.all
 		@tour = Tour.find_by id: params[:id]
 		unless @tour.present?
 			flash[:success] = "khong ton tai id nay"
