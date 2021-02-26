@@ -1,0 +1,68 @@
+<% provide(:title, "Đăng ký") %>
+<div class="frame">
+  <div class="frame-form">
+    <div class="h-form">
+      <span class="t3hf0m">Đăng ký</span>
+    </div>
+    <div class="bd-form">
+      <div class="form-login">
+        <div class="form">
+          <%= form_for(@user) do |f| %>
+          <%= f.label :Name %>
+          <%= f.text_field :name, class: 'form-control' %>
+          <%= f.label :Account %>
+          <%= f.email_field :email, class: 'form-control' %>
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'form-control' %>
+          <%= f.label :password_confirmation %>
+          <%= f.password_field :password_confirmation, class: 'form-control' %>
+          <%= f.submit "Đồng ý và tiếp tục", class: "_button" %>
+          <p>Bạn có tài khoản? <%= link_to "Đăng nhập!", login_path %></p>
+          <% end %>
+        </div>
+      </div>
+      <a href="/auth/facebook">
+      <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+        <div class="_1a2vq1h">
+          <div class="_fb4s8m">
+            <div class="yc0l">
+              <img src="../assets/fb.svg" width="30" height="30" alt="">
+            </div>
+            <div class="ttvfb" ">
+              <span class="ttvfb-i">Tiếp tục với Facebook</span>
+            </div>
+          </div>
+        </div>
+      </button>
+      </a>
+      <a href="/auth/google_oauth2">
+        <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+          <div class="_1a2vq1h">
+            <div class="_fb4s8m">
+              <div class="yc0l">
+                <img src="../assets/gg.svg" width="30" height="30" alt="">
+              </div>
+              <div class="ttvfb" ">
+                <span class="ttvfb-i">Tiếp tục với Google</span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </a>
+      <a href="/auth/github">
+        <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+          <div class="_1a2vq1h">
+            <div class="_fb4s8m">
+              <div class="yc0l">
+                <img src="../assets/github.svg" width="30" height="30" alt="">
+              </div>
+              <div class="ttvfb" ">
+                <span class="ttvfb-i">Tiếp tục với GitHub</span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </a>  
+    </div>
+  </div>
+</div>

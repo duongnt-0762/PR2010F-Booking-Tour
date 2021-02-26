@@ -5,3 +5,7 @@ vi:
         accepted:"Đã chấp nhận"
         rejected:"Đã từ chối"
         not_set:"Chưa xử lý"
+
+  users:
+    show:
+      account: 'Tài khoản'

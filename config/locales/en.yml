@@ -5,3 +5,6 @@ en:
         accepted:"Accepted"
         rejected:"Rejected"
         not_set:"Not yet confirmed"
+users:
+  show:
+    account: 'Account'
