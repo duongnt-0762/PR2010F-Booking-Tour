@@ -40,22 +40,7 @@
   </div>
   <div class="body-sheet">
     <div class="content-tour">
-      <% @tours.each do |tour|%>
-      <div class="content-tour-i">
-        <div class="mar-container">
-          <a href="#">
-
-            <div class="frame-image">
-              <img class="image" src="../assets/house.png">
-            </div>
-            <div class="star"><img src="../assets/star.svg" width="15px"height="15px"> 4.50 <span>(12)</span></div>
-            <div class="infor"><%= tour.title %><%= tour.address %></div>
-            <div class="infor"><span><%= tour.description %></span></div>
-            <div class="infor"><span class="text">$<span><%= tour.price %>/đêm</span></span></div>
-          </a>
-        </div>
-      </div>
-      <%end%>
+      <%= render @tours%>
     </div>
     <div class="paginate"><%= will_paginate %></div>
   </div>
@@ -65,7 +50,6 @@
       <div class="s-title">Ngày và giá cả đã được cập nhật cho phù hợp với nội dung tìm kiếm hiện tại của bạn.</div>
       <div class="m-tour">
       </div>
-
     </div>
     <div class="tax"><span class="tax-s">Nhập ngày để xem giá đầy đủ. Áp dụng phụ phí. Có thể phát sinh thuế.</span></div>
   </div>

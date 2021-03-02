@@ -77,7 +77,7 @@ ActiveRecord::Schema.define(version: 2021_02_24_045047) do
   create_table "rates", charset: "utf8", force: :cascade do |t|
     t.integer "user_id"
     t.integer "tour_id"
-    t.integer "quantity"
+    t.float "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
