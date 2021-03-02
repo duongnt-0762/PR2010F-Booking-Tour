@@ -1,0 +1,68 @@
+<% provide(:title,t('.title')) %>
+<div class="frame">
+  <div class="frame-form">
+    <div class="h-form">
+      <span class="t3hf0m"><%=t('.title')%></span>
+    </div>
+    <div class="bd-form">
+      <div class="form-login">
+        <div class="form">
+          <%= form_for(@user) do |f| %>
+          <%= f.label t('.name') %>
+          <%= f.text_field :name, class: 'form-control' %>
+          <%= f.label t('.account') %>
+          <%= f.email_field :email, class: 'form-control' %>
+          <%= f.label t('.password') %>
+          <%= f.password_field :password, class: 'form-control' %>
+          <%= f.label t('.password_confirmation') %>
+          <%= f.password_field :password_confirmation, class: 'form-control' %>
+          <%= f.submit t('.continue'), class: "_button" %>
+          <p><%= t('.ask')%> <%= link_to t('.signin'), login_path %></p>
+          <% end %>
+        </div>
+      </div>
+      <a href="/auth/facebook">
+      <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+        <div class="_1a2vq1h">
+          <div class="_fb4s8m">
+            <div class="yc0l">
+              <img src="../../assets/fb.svg" width="30" height="30" alt="">
+            </div>
+            <div class="ttvfb" ">
+              <span class="ttvfb-i"><%=t('.fb')%> </span>
+            </div>
+          </div>
+        </div>
+      </button>
+      </a>
+      <a href="/auth/google_oauth2">
+        <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+          <div class="_1a2vq1h">
+            <div class="_fb4s8m">
+              <div class="yc0l">
+                <img src="../../assets/gg.svg" width="30" height="30" alt="">
+              </div>
+              <div class="ttvfb" ">
+                <span class="ttvfb-i"><%=t('.gmail')%></span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </a>
+      <a href="/auth/github">
+        <button type="submit" name="button" class="_m3o8wbc" onlogin="checkLoginState();">
+          <div class="_1a2vq1h">
+            <div class="_fb4s8m">
+              <div class="yc0l">
+                <img src="../../assets/github.svg" width="30" height="30" alt="">
+              </div>
+              <div class="ttvfb" ">
+                <span class="ttvfb-i"><%=t('.github')%></span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,20 +1,26 @@
 <% if current_user.admin? %>
 <span class="tt">Phê duyệt:</span>
   <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <%=@request.status%> <b class="caret"></b>
-  </button>
+    <% if @request.status == 'not_set'%>
+    <%= t('.ns')%>
+    <%elsif @request.status == 'accepted' %>
+    <%= t('.cn')%>
+    <%else%>
+    <%= t('.tc')%>
+    <%end%>
+ </button>
   <% if @request.status== "not_set" %>
     <ul class="dropdown-menu">
-      <li><%= link_to "Accept", admin_request_path(@request, status: "accepted"), method: :patch ,data: { confirm: "You sure?" }, remote: true, class: 'xac_nhan' %></li>
-      <li><%= link_to "Reject", admin_request_path(@request, status: "rejected"), method: :patch ,data: { confirm: "You sure?"}, remote: true, class: 'tu_choi' %></li>
+      <li><%= link_to t('.cn'), admin_request_path(@request, status: "accepted"), method: :patch ,data: { confirm: "You sure?" }, remote: true, class: 'xac_nhan' %></li>
+      <li><%= link_to t('.tc'), admin_request_path(@request, status: "rejected"), method: :patch ,data: { confirm: "You sure?"}, remote: true, class: 'tu_choi' %></li>
     </ul>
   <% elsif @request.status== "accepted" %>
     <ul class="dropdown-menu">
-      <li><%= link_to "Reject", admin_request_path(@request, status: "rejected"), method: :patch ,data: { confirm: "You sure?"}, remote: true, class: 'tu_choi' %></li>
+      <li><%= link_to t('.tc'), admin_request_path(@request, status: "rejected"), method: :patch ,data: { confirm: "You sure?"}, remote: true, class: 'tu_choi' %></li>
     </ul>
   <% else %>
     <ul class="dropdown-menu">
-      <li><%= link_to "Accept", admin_request_path(@request, status: "accepted"), method: :patch ,data: { confirm: "You sure?" }, remote: true, class: 'xac_nhan' %></li>
+      <li><%= link_to t('.cn'), admin_request_path(@request, status: "accepted"), method: :patch ,data: { confirm: "You sure?" }, remote: true, class: 'xac_nhan' %></li>
     </ul>
   <% end %>
 <% end %>

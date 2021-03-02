@@ -5,7 +5,7 @@ module ApplicationHelper
     if page_title.empty?
       base_title
     else
-      page_title + "  •  Airbnb" 
+      page_title + "  •  Airbnb"
     end
   end
 end

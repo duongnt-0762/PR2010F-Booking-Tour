@@ -1,13 +1,15 @@
+<% provide(:title,t('.title')) %>
 <img class="bg"src="../assets/background.png">
 <div class="blkx">
+  <span class="odau"><%= t('.destinations')%></span>
   <div class="blk1">
     <div class="blk">
       <a class="agpl" href="#">
         <div class="w-search">
           <span class="plc"><img class="iconp"src="../assets/hanoi.png" alt="hanoi"></span>
           <span class="plc">
-            <span class="pnt1"><b>Hà Nội</b></span>
-            <span class="pnt">15 phút lái xe</span>
+            <span class="pnt1"><b><%= t('.hanoi') %></b></span>
+            <span class="pnt">15 <%= t('.phutlaixe')%></span>
           </span>
         </div>
       </a>
@@ -17,8 +19,8 @@
         <div class="w-search">
           <span class="plc"><img class="iconp"src="../assets/nb.png" alt="hanoi"></span>
           <span class="plc">
-            <span class="pnt1"><b>Thành Phố Ninh Bình</b></span>
-            <span class="pnt">1.5 giờ lái xe</span>
+            <span class="pnt1"><b><%= t('.tpninhbinh') %></b></span>
+            <span class="pnt">1.5 <%= t('.giolaixe')%></span>
           </span>
         </div>
       </a>
@@ -28,8 +30,8 @@
         <div class="w-search">
           <span class="plc"><img class="iconp"src="../assets/mc.png" alt="hanoi"></span>
           <span class="plc">
-            <span class="pnt1"><b>Thành phố Móng Cái</b></span>
-            <span class="pnt">4.5 giờ lái xe</span>
+            <span class="pnt1"><b><%= t('.tpmongcai') %></b></span>
+            <span class="pnt">4.5 <%= t('.giolaixe')%></span>
           </span>
         </div>
       </a>
@@ -39,8 +41,8 @@
         <div class="w-search">
           <span class="plc"><img class="iconp"src="../assets/dh.png" alt="hanoi"></span>
           <span class="plc">
-            <span class="pnt1"><b>Thành phố Đồng Hới</b></span>
-            <span class="pnt">6.5 giờ lái xe</span>
+            <span class="pnt1"><b><%= t('.tpdonghoi') %></b></span>
+            <span class="pnt">6.5 <%= t('.giolaixe')%></span>
           </span>
         </div>
       </a>
@@ -52,8 +54,8 @@
         <div class="w-search">
           <span class="plc"><img class="iconp"src="../assets/hg.png" alt="hanoi"></span>
           <span class="plc">
-            <span class="pnt1"><b>Thành phố Hà Giang</b></span>
-            <span class="pnt">4 giờ lái xe</span>
+            <span class="pnt1"><b><%= t('.tphagiang') %></b></span>
+            <span class="pnt">4 <%= t('.giolaixe')%></span>
           </span>
         </div>
       </a>
@@ -63,8 +65,8 @@
         <div class="w-search">
           <span class="plc"><img class="iconp"src="../assets/st.png" alt="hanoi"></span>
           <span class="plc">
-            <span class="pnt1"><b>Thị xã Sơn Tây</b></span>
-            <span class="pnt">45 phút lái xe</span>
+            <span class="pnt1"><b><%= t('.txsontay') %></b></span>
+            <span class="pnt">45 <%= t('.phutlaixe')%></span>
           </span>
         </div>
       </a>
@@ -74,8 +76,8 @@
         <div class="w-search">
           <span class="plc"><img class="iconp"src="../assets/th.png" alt="hanoi"></span>
           <span class="plc">
-            <span class="pnt1"><b>Thành phố Thanh Hóa</b></span>
-            <span class="pnt">2 giờ lái xe</span>
+            <span class="pnt1"><b><%= t('.tpthanhhoa') %></b></span>
+            <span class="pnt">2 <%= t('.giolaixe')%></span>
           </span>
         </div>
       </a>
@@ -85,8 +87,8 @@
         <div class="w-search">
           <span class="plc"><img class="iconp"src="../assets/hd.png" alt="hanoi"></span>
           <span class="plc">
-            <span class="pnt1"><b>Thành phố Hải Dương</b></span>
-            <span class="pnt">1 giờ lái xe</span>
+            <span class="pnt1"><b><%= t('.tphaiduong') %></b></span>
+            <span class="pnt">1 <%= t('.giolaixe')%></span>
           </span>
         </div>
       </a>
@@ -96,31 +98,31 @@
 
 <div class="obk-dau">
   <div class="m-odau">
-    <span class="odau">Ở bất cứ đâu</span>
+    <span class="odau"><%= t('.live_anywhere')%></span>
   </div>
   <div class="e-where">
     <a class="e-where-i" href="#">
       <div class="house">
         <span class="ihouse"><img class="iconh"src="../assets/tbnha.png" alt="hanoi"></span>
-        <span class="pnt3"><b>Toàn bộ nhà</b></span>
+        <span class="pnt3"><b><%= t('.entire_homes')%></b></span>
       </div>
     </a>
     <a class="e-where-i" href="#">
       <div class="house">
         <span class="ihouse"><img class="iconh"src="../assets/cabin.png" alt="hanoi"></span>
-        <span class="pnt3"><b>Cabin & nhà nghỉ thôn dã</b></span>
+        <span class="pnt3"><b><%= t('.cabins_and_cottages')%></b></span>
       </div>
     </a>
     <a class="e-where-i" href="#">
       <div class="house">
         <span class="ihouse"><img class="iconh"src="../assets/ddao.png" alt="hanoi"></span>
-        <span class="pnt3"><b>Chỗ ở độc đáo</b></span>
+        <span class="pnt3"><b><%= t('.unique_stays')%></b></span>
       </div>
     </a>
     <a class="e-where-i" href="#">
       <div class="house">
         <span class="ihouse"><img class="iconh"src="../assets/pet.png" alt="hanoi"></span>
-        <span class="pnt3"><b>Thú cưng được chào đón</b></span>
+        <span class="pnt3"><b><%= t('.pets_allowed')%></b></span>
       </div>
     </a>
   </div>
@@ -128,25 +130,25 @@
 
 <div class="obk-dau">
   <div class="m-odau">
-    <span class="odau">Tham gia cùng hàng triệu chủ nhà/người tổ chức trên Airbnb</span>
+    <span class="odau"><%= t('.join')%></span>
   </div>
   <div class="join">
     <a class="join-i" href="#">
       <div class="housei">
         <span class="ihouse"><img class="iconh"src="../assets/rent.png" alt="hanoi"></span>
-        <span class="pnt2"><b>Cho thuê nhà</b></span>
+        <span class="pnt2"><b><%=t('.host_your_home')%></b></span>
       </div>
     </a>
     <a class="join-i" href="#">
       <div class="housei">
         <span class="ihouse"><img class="iconh"src="../assets/cook.png" alt="hanoi"></span>
-        <span class="pnt2"><b>Tổ chức trải nghiệm trực tuyến</b></span>
+        <span class="pnt2"><b><%=t('.online_experience')%></b></span>
       </div>
     </a>
     <a class="join-i" href="#">
       <div class="housei">
         <span class="ihouse"><img class="iconh"src="../assets/famer.png" alt="hanoi"></span>
-        <span class="pnt2"><b>Tổ chức trải nghiệm</b></span>
+        <span class="pnt2"><b><%=t('.host_your_experience')%></b></span>
       </div>
     </a>
   </div>

@@ -22,8 +22,14 @@
     <div class="info-i"><%=request.user.email%></div>
     <div class="info-i"><%=request.tour.title%></div>
     <div class="info-i"><%=request.tour.address%></div>
-    <div class="info-ii"><%=request.status%></div>
-    <div class="info-ii"><%= link_to "View", admin_request_url(request)%></div>
+    <% if request.status == 'not_set'%>
+    <div class="info-ii"><%= t('.ns')%></div>
+    <%elsif request.status == 'accepted' %>
+    <div class="info-ii"><%= t('.cn')%></div>
+    <%else%>
+    <div class="info-ii"><%= t('.tc')%></div>
+    <%end%>
+    <div class="info-ii"><%= link_to t('.view'), admin_request_url(request)%></div>
   </div>
   <%end%>
 </ul>

@@ -19,7 +19,12 @@ gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'rails-i18n'
 
+gem 'omniauth-github'
+gem "omniauth", "~> 1.9.1"
+gem "omniauth-google-oauth2"
+gem "omniauth-facebook"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

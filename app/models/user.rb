@@ -9,25 +9,39 @@ class User < ApplicationRecord
 	has_many :rates
 	has_many :likes
 	has_many :requests
+	has_many :oauth
+
 
 	validates :name, presence: true, length: { maximum: 50 }
 	validates :email, presence: true, length: { maximum: 255 },
 	format: { with: VALID_EMAIL_REGEX }, uniqueness: true
-	validates :password, presence: true, length: { minimum: 6 }
-
 	has_secure_password
+	validates :password, presence: true, length: { minimum: 6 }
 
 	before_save :downcase_email
 
 	class << self
 		def digest(string)
-      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+			cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
 			BCrypt::Engine.cost
 			BCrypt::Password.create(string, cost: cost)
 		end
 
 		def new_token
 			SecureRandom.urlsafe_base64
+		end
+
+		def from_omniauth(auth)
+			where(auth.(:provider, :uid)).first_or_initialize.tap do |user|
+				user.provider = auth.provider
+				user.user_id = auth.user_id
+				user.name = auth.info.name
+				user.email = auth.info.email
+				user.oauth_token = auth.credentials.token
+				user.password = auth["uid"]
+				user.admin = false
+				user.save!
+			end
 		end
 	end
 
