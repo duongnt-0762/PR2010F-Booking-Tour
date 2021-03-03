@@ -3,7 +3,7 @@ class CreateRates < ActiveRecord::Migration[6.1]
     create_table :rates do |t|
       t.integer :user_id
       t.integer :tour_id
-      t.integer :quantity
+      t.float :quantity
       t.timestamps
     end
   end
