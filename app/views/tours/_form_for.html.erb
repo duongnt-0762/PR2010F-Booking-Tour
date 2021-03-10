@@ -1,0 +1,218 @@
+<div>
+  <h2> <%= t('.what_type')%></h2>
+  <%= form_for(@tour) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="quantity">
+    <%= f.label :address %>
+    <%= f.text_field :address, class: 'form-control' %>
+  </div>
+  <h3><%= t('.confirm')%></h3>
+  <div class="quantity">
+  <%= f.label :house_type %>
+  <%= f.select :house_type, options_for_select([["Select One", ""], t('.all'), t('.private'), t('.general')]) %>
+  </div>
+  <h2><%= t('.qs1')%></h2>
+  <h6><%= t('.qs2')%></h6>
+  <div class="quantity">
+    <%= f.label :guest %>
+    <%= f.text_field :guest, id:'noOfRoom', value:'1', class: 'form-control' %>
+    <input type="button" value="-" id="subs"  />
+    <input type="button" value="+" id="adds" />
+  </div>
+  <div class="quantity">
+    <%= f.label :bed %>
+    <%= f.text_field :bed, id:'noOfRoom2', value:'1', class: 'form-control' %>
+    <input type="button" value="-" id="subs2"  />
+    <input type="button" value="+" id="adds2" />
+  </div>
+  <div class="quantity">
+    <%= f.label :bathroom %>
+    <%= f.text_field :bathroom, id:'noOfRoom3', value:'1', class: 'form-control' %>
+    <input type="button" value="-" id="subs3"  />
+    <input type="button" value="+" id="adds3" />
+  </div>
+  <div class="quantity">
+    <%= f.label :room %>
+    <%= f.text_field :room, id:'noOfRoom4', value:'1', class: 'form-control' %>
+    <input type="button" value="-" id="subs4"  />
+    <input type="button" value="+" id="adds4" />
+  </div>
+  <div class="form_group">
+    <%= f.label :convenient %>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]',  t('.convenient1'), checked( t('.convenient1')) %>
+      <%= label_tag  t('.convenient1') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient2'), checked(t('.convenient2')) %>
+      <%= label_tag t('.convenient2') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient3'), checked(t('.convenient3')) %>
+      <%= label_tag t('.convenient3') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient4'), checked(t('.convenient4')) %>
+      <%= label_tag t('.convenient4') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient5'), checked(t('.convenient5')) %>
+      <%= label_tag t('.convenient5') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient6'), checked(t('.convenient6')) %>
+      <%= label_tag t('.convenient6') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient7'), checked(t('.convenient7')) %>
+      <%= label_tag t('.convenient7') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient8'), checked(t('.convenient8')) %>
+      <%= label_tag t('.convenient8') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient9'), checked(t('.convenient9')) %>
+      <%= label_tag t('.convenient9') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient10'), checked(t('.convenient10')) %>
+      <%= label_tag t('.convenient10') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient11'), checked(t('.convenient11')) %>
+      <%= label_tag t('.convenient11') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient12'), checked(t('.convenient12')) %>
+      <%= label_tag t('.convenient12') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient13'), checked(t('.convenient13')) %>
+      <%= label_tag t('.convenient13') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient14'), checked(t('.convenient14')) %>
+      <%= label_tag t('.convenient14') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient15'), checked(t('.convenient15')) %>
+      <%= label_tag t('.convenient15') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient16'), checked(t('.convenient16')) %>
+      <%= label_tag t('.convenient16') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient17'), checked(t('.convenient17')) %>
+      <%= label_tag t('.convenient17') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient18'), checked(t('.convenient18')) %>
+      <%= label_tag t('.convenient18') %>
+    </div>
+    <div class="convenient-f">
+      <%= check_box_tag 'tour[convenient][]', t('.convenient19'), checked(t('.convenient19')) %>
+      <%= label_tag t('.convenient19') %>
+    </div>
+  </div>
+  <h2><%= t('.qs3')%></h2>
+  <h6><%= t('.qs4')%></h6>
+  <div class="quantity">
+    <%= f.label :furniture %>
+    <div class="field">
+      <div class="convenient-f">
+        <%= check_box_tag 'tour[furniture][]', t('.furniture1'), checked(t('.furniture1')) %>
+        <%= label_tag  t('.furniture1') %>
+      </div>
+      <div class="convenient-f">
+        <%= check_box_tag 'tour[furniture][]', t('.furniture2'), checked(t('.furniture2')) %>
+        <%= label_tag  t('.furniture2') %>
+      </div>
+      <div class="convenient-f">
+        <%= check_box_tag 'tour[furniture][]', t('.furniture3'), checked(t('.furniture3')) %>
+        <%= label_tag  t('.furniture3') %>
+      </div>
+      <div class="convenient-f">
+        <%= check_box_tag 'tour[furniture][]', t('.furniture4'), checked(t('.furniture4')) %>
+        <%= label_tag  t('.furniture4') %>
+      </div>
+      <div class="convenient-f">
+        <%= check_box_tag 'tour[furniture][]', t('.furniture5'), checked(t('.furniture5')) %>
+        <%= label_tag  t('.furniture5') %>
+      </div>
+      <div class="convenient-f">
+        <%= check_box_tag 'tour[furniture][]', t('.furniture6'), checked(t('.furniture6')) %>
+        <%= label_tag  t('.furniture6') %>
+      </div>
+      <div class="convenient-f">
+        <%= check_box_tag 'tour[furniture][]', t('.furniture7'), checked(t('.furniture7')) %>
+        <%= label_tag  t('.furniture7') %>
+      </div>
+    </div>
+  </div>
+  <div class="quantity">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <div class="quantity">
+    <%= f.label :description %>
+    <%= f.text_area :description, class: 'form-control' %>
+  </div>
+  <h2><%= t('.qs5')%></h2>
+  <h6><%= t('.qs6')%></h6>
+  <div class="quantity">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+  <h2><%= t('.qs7')%></h2>
+  <h6><%= t('.qs8')%></h6>
+  <div class="quantity">
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number, class: 'form-control' %>
+  </div>
+  <section><div class="_1mbllh6j"><div>Duyệt lại yêu cầu đối với khách của Airbnb</div></div><div data-testid="lys-guest-requiremenets"><div><div class="_czm8crp">Airbnb đặt ra các yêu cầu mà tất cả các khách phải đáp ứng trước khi đặt phòng.</div></div><div data-testid="lys-static-ib-requirements"><div><div style="margin-bottom: 18px;">Tất cả khách của Airbnb phải cung cấp:</div><div style="margin-bottom: 6px;"><div class="_2h22gn"><div class="_c3olmg7"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 21px; width: 21px; display: block; fill: rgb(35, 209, 193);"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div><div class="_1z0cge87">Địa chỉ email</div></div></div><div style="margin-bottom: 6px;"><div class="_2h22gn"><div class="_c3olmg7"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 21px; width: 21px; display: block; fill: rgb(35, 209, 193);"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div><div class="_1z0cge87">Số điện thoại đã được xác nhận</div></div></div><div style="margin-bottom: 6px;"><div class="_2h22gn"><div class="_c3olmg7"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 21px; width: 21px; display: block; fill: rgb(35, 209, 193);"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div><div class="_1z0cge87">Thông tin thanh toán</div></div></div><div style="margin-top: 30px;"><hr></div></div><div style="margin-bottom: 30px;"><div style="margin-bottom: 18px;">Trước khi đặt nhà của bạn, mỗi khách cần phải:</div><div style="margin-bottom: 6px;"><div class="_2h22gn"><div class="_c3olmg7"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 21px; width: 21px; display: block; fill: rgb(35, 209, 193);"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div><div class="_1z0cge87">Đồng ý với Nội quy nhà của bạn</div></div></div><div style="margin-bottom: 6px;"><div class="_2h22gn"><div class="_c3olmg7"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 21px; width: 21px; display: block; fill: rgb(35, 209, 193);"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div><div class="_1z0cge87">Thông báo cho bạn về chuyến đi của họ</div></div></div><div style="margin-bottom: 6px;"><div class="_2h22gn"><div class="_c3olmg7"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 21px; width: 21px; display: block; fill: rgb(35, 209, 193);"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div><div class="_1z0cge87">Thông báo cho bạn số lượng khách sắp đến</div></div></div><div style="margin-bottom: 6px;"><div class="_2h22gn"><div class="_c3olmg7"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 21px; width: 21px; display: block; fill: rgb(35, 209, 193);"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div><div class="_1z0cge87">Xác nhận thời gian nhận phòng nếu họ đến trong vòng 2 ngày sau đó</div></div></div><div style="margin-top: 30px;"><hr></div></div></div><div style="margin-bottom: 18px;"></div></div></section>
+  <h2><%= t('.qs9')%></h2>
+  <h6><%= t('.qs10')%></h6>
+  <div class="quantity">
+    <%= f.label :rules %>
+    <div class="">
+      <div class="convenient-f">
+        <%= f.radio_button(:rules, t('.rules1')) %>
+        <%= label_tag(:rules, t('.rules1')) %>
+      </div>
+      <div class="convenient-f">
+        <%= f.radio_button(:rules, t('.rules2')) %>
+        <%= label_tag(:rules, t('.rules2')) %>
+      </div>
+      <div class="convenient-f">
+        <%= f.radio_button(:rules, t('.rules3')) %>
+        <%= label_tag(:rules, t('.rules3')) %>
+      </div>
+      <div class="convenient-f">
+        <%= f.radio_button(:rules, t('.rules4')) %>
+        <%= label_tag(:rules, t('.rules4')) %>
+      </div>
+      <div class="convenient-f">
+        <%= f.radio_button(:rules, t('.rules5')) %>
+        <%= label_tag(:rules, t('.rules5')) %>
+      </div>
+    </div>
+  </div>
+  <div class="convenient-f">
+    <%= f.label :content, t('.checkin-time') %>
+    <%= f.select(:content, options_for_select([["00:00", "00:00"],["01:00", "01:00"],
+    ["02:00", "02:00"],["03:00", "03:00"],["04:00", "04:00"],["05:00", "05:00"],
+    ["06:00", "06:00"],["07:00", "07:00"],["08:00", "08:00"],["10:00", "10:00"],
+    ["11:00", "11:00"],["12:00", "12:00"],["13:00", "13:00"],["14:00", "14:00"],
+    ["15:00", "15:00"],["16:00", "16:00"],["17:00", "17:00"],["18:00", "18:00"],
+    ["19:00", "19:00"],["20:00", "20:00"],["21:00", "21:00"],["22:00", "22:00"],
+    ["23:00", "23:00"]]), { include_blank: true }) %>
+  </div>
+  <div class="quantity">
+    <%= f.label :price %>
+    <%= f.number_field :price, class: 'form-control' %>
+  </div>
+  <%= f.submit "Save", class: "btn btn-primary" %>
+  <% end %>
+</div>

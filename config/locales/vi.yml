@@ -1,4 +1,7 @@
 vi:
+  controllers:
+    admin:
+      create: "Tạo thành công, xin hãy chờ phê duyệt!"
   admin:
     requests:
       index:
@@ -10,6 +13,10 @@ vi:
         cn: "Chấp nhận"
         tc: "Từ chối"
         ns: "Chưa xử lý"
+    tours:
+      index:
+        draft: 'Mới'
+        publish: 'Đã duyệt'
   users:
     show:
       account: 'Tài khoản'
@@ -124,3 +131,68 @@ vi:
       host_your_home: 'Cho thuê nhà'
       host_your_experience: 'Tổ chức trải nghiệm'
       online_experience: 'Tổ chức trải nghiệm trực tuyến'
+  tours:
+    new:
+      become: 'Trở thành chủ nhà'
+      choose: 'Chọn các danh mục của nhà/phòng cho thuê'
+      tagg: 'Việc chọn các danh mục chính xác giúp khách biết họ có
+      thể mong đợi những gì khi nói đến sự riêng tư, phong cách và cấp độ
+      dịch vụ mà họ sẽ nhận được trong thời gian ở chỗ của bạn.'
+    form_for:
+      what_type: "Bạn đang đăng tải loại nhà/phòng cho thuê nào?"
+      confirm: 'Xác nhận loại chỗ ở cho khách'
+      qs1: 'Chỗ của bạn có thể tiếp đón bao nhiêu khách?'
+      qs2: 'Kiểm tra xem nhà bạn có đủ giường cho tất cả khách nghỉ ngơi thoải mái không.'
+      qs3: 'Khách có thể sử dụng những không gian nào?'
+      qs4: 'Bao gồm các khu vực chung, nhưng đừng thêm nơi nằm ngoài quyền sở hữu của bạn.'
+      qs5: 'Tạo tiêu đề cho nhà/phòng cho thuê của bạn'
+      qs6: 'Thu hút sự chú ý của khách với tiêu đề mục cho thuê sao cho làm nổi bật được những điểm đặc biệt của nhà/phòng cho thuê.'
+      qs7: 'Thêm số di động của bạn'
+      qs8: 'Khách có thể sử dụng số này để liên hệ với bạn không?'
+      qs9: 'Đặt nội quy nhà cho khách của bạn'
+      qs10: 'Khách phải đồng ý với nội quy nhà của bạn trước khi đặt phòng.'
+      convenient1: 'Tiện nghi thiết yếu'
+      convenient2: 'Wifi'
+      convenient3: 'TV'
+      convenient4: 'Hệ thống sưởi'
+      convenient5: 'Điều hòa nhiệt độ'
+      convenient6: 'Bàn là'
+      convenient7: 'Dầu gội đầu'
+      convenient8: 'Máy sấy tóc'
+      convenient9: 'Ăn sáng, cà phê, trà'
+      convenient10: 'Không gian riêng để làm việc'
+      convenient11: 'Lò sưởi trong nhà'
+      convenient12: 'Mắc treo quần áo'
+      convenient13: 'Đồ nấu ăn cơ bản'
+      convenient14: 'Cũi Pack ’n Play/cũi du lịch'
+      convenient15: "Máy báo khói"
+      convenient16: "Máy phát hiện CO"
+      convenient17: "Bộ sơ cứu"
+      convenient18: "Bình chữa cháy"
+      convenient19: "Khóa ở cửa phòng ngủ"
+      furniture1: 'Giặt là – máy sấy quần áo'
+      furniture2: 'Bồn tắm nước nóng'
+      furniture3: 'Phòng bếp'
+      furniture4: 'Bể bơi'
+      furniture5: 'Giặt là – máy giặt'
+      furniture6: 'Bãi đỗ xe'
+      furniture7: 'Phòng tập thể dục'
+      rules1: "Phù hợp với trẻ nhỏ (dưới 2 tuổi)"
+      rules2: "Phù hợp với trẻ nhỏ (2-12 tuổi)"
+      rules3: "Chấp nhận thú cưng"
+      rules4: "Được phép hút thuốc"
+      rules5: "Được phép tổ chức tiệc"
+      checkin-time: "Thời gian nhận phòng"
+      all: 'Toàn bộ nhà'
+      private: 'Phòng riêng'
+      general: 'Phòng chung'
+    show:
+      room: "phòng"
+      bed: "giường"
+      bath: "phòng tắm"
+      guest: "khách"
+      host: 'Chủ nhà'
+      new: 'Mới'
+      furniture: 'Không gian có thể sử dụng'
+      convenient: 'Tiện ích'
+      rules: 'Những điều cần biết'

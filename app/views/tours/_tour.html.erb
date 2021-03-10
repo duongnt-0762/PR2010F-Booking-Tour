@@ -1,8 +1,9 @@
+<% if tour.host_user == 'publish' %>
 <div class="content-tour-i">
   <div class="mar-container">
     <%= link_to tour do %>
       <div class="frame-image">
-        <img class="image" src="../assets/house.png">
+        <%= image_tag tour.image ,class:"image" if tour.image.attached? %>
       </div>
       <div class="star"><img src="../assets/star.svg" width="15px"height="15px"> 4.50 <span>(12)</span></div>
       <div class="infor"><%= tour.title %><%= tour.address %></div>
@@ -11,3 +12,4 @@
     <% end %>
   </div>
 </div>
+<%end%>
