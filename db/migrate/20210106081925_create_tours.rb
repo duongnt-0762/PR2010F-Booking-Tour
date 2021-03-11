@@ -5,7 +5,7 @@ class CreateTours < ActiveRecord::Migration[6.1]
       t.string :address
       t.text   :description
       t.text   :content
-      t.decimal :price, :precision => 8, :scale => 2
+      t.float :price
       t.text :house_type
       t.text :convenient
       t.text :rules

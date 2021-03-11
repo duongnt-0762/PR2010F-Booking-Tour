@@ -11,11 +11,13 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   get '/signup', to: 'users#new'
   get'/login',to: 'sessions#new'
+  get'/home', to:'static_pages#index'
+
   post'/login',to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
-  scope "(:locale)", locale: /en|vi/ do
+  #scope "(:locale)", locale: /en|vi/ do
   resources :users
   resources :tours
   resources :requests, only: [:show, :new, :create]
   end
-end
+#end
