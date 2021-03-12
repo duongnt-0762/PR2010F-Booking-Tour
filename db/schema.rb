@@ -77,15 +77,20 @@ ActiveRecord::Schema.define(version: 2021_03_04_021547) do
   create_table "rates", charset: "utf8", force: :cascade do |t|
     t.integer "user_id"
     t.integer "tour_id"
-    t.float "quantity"
+    t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "requests", charset: "utf8", force: :cascade do |t|
+    t.date "day_start"
+    t.date "day_end"
+    t.integer "stayed"
     t.integer "user_id"
     t.integer "tour_id"
-    t.integer "stayed"
+    t.integer "price"
+    t.integer "gues"
+    t.integer "payment"
     t.integer "status", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

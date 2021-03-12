@@ -1,9 +1,10 @@
 class ToursController < ApplicationController
 	before_action :find_tour, only: [:show]
-	before_action :logged_in_user, only: [:new,:show,:create, :destroy, :edit, :update,]
-	before_action :correct_user, only: [:show, :edit, :destroy]
+	before_action :logged_in_user, only: [:new, :create, :destroy, :edit, :update,]
+	before_action :correct_user, only: [ :edit, :destroy]
+
 	def new
-		@tour = Tour.new
+		@tour=Tour.new
 	end
 
 	def edit
@@ -14,6 +15,7 @@ class ToursController < ApplicationController
 	end
 
 	def show
+
 		arr_rates = @tour.rates
 		sum = 0
 		arr_rates.each do|rate|
@@ -47,6 +49,7 @@ class ToursController < ApplicationController
 
 	def find_tour
 		@tour = Tour.find_by id: params[:id]
+		@request = Request.new
 		unless @tour.present?
 			flash[:success] = "Tour doesn't exist"
 			redirect_to root_url
@@ -62,4 +65,5 @@ class ToursController < ApplicationController
 		@tour = current_user.tours.find_by(id: params[:id])
 		redirect_to root_url if @tour.nil?
 	end
+
 end
