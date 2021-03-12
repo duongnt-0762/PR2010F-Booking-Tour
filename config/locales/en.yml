@@ -1,4 +1,7 @@
 en:
+  controllers:
+    admin:
+      create: " Create success, please wait accept."
   admin:
     requests:
       index:
@@ -10,6 +13,10 @@ en:
         cn: "Accept"
         Rejected: "Reject"
         not_set: "Not yet confirmed"
+    tours:
+      index:
+        draft: 'New'
+        publish: 'Published'
   users:
     show:
       account: 'Account'
@@ -124,3 +131,66 @@ en:
       host_your_home: 'Host your home'
       host_your_experience: 'Host your experience'
       online_experience: 'Online_experience'
+  tours:
+    new:
+      become: "Become a host"
+      choose: "Choose the category of houses / rooms to rent"
+      tagg:   "Choosing the correct categories helps guestsknow what to expect when it comes to the privacy, style,and level of service they'll receive during your stay"
+    form_for:
+      what_type: "What type of house / room are you posting?"
+      confirm: 'Confirm accommodation type for guests'
+      qs1: 'How many guests can be accommodated at your place?'
+      qs2: 'Check that your home has enough beds for all guests to comfortably rest.'
+      qs3: 'What spaces can guests use?'
+      qs4: "Include common areas, but don't add places outside of your possession."
+      qs5: "Create a title for your home/rental"
+      qs6: 'Capture the attention of guests with a rental heading that highlights the features of the house / rental.'
+      qs7: 'Add your mobile number'
+      qs8: 'Can guests use this number to contact you?'
+      qs9: 'Set house rules for your guests'
+      qs10: 'Guests must agree to your house rules before making a reservation.'
+      convenient1: 'Essential comfort'
+      convenient2: 'Wifi'
+      convenient3: 'Television'
+      convenient4: 'Heating system'
+      convenient5: 'Air conditioner'
+      convenient6: 'Iron'
+      convenient7: 'Shampoo'
+      convenient8: 'Hairdryer'
+      convenient9: 'Breakfast, coffee, tea'
+      convenient10: 'Private space to work'
+      convenient11: 'Indoor fireplace'
+      convenient12: 'Clothes hangers'
+      convenient13: 'Basic cooking food'
+      convenient14: 'Pack n Play crib'
+      convenient15: "Smoke detector"
+      convenient16: "CO detector"
+      convenient17: "First aid kit"
+      convenient18: "Fire extinguisher"
+      convenient19: "Lock at the bedroom door"
+      furniture1: 'Laundry - clothes dryer'
+      furniture2: 'Hot tub'
+      furniture3: 'Kitchen'
+      furniture4: 'Pool'
+      furniture5: 'Laundry - washing machine'
+      furniture6: 'Parking'
+      furniture7: 'Gym'
+      rules1: "Suitable for children (under 2 years old)"
+      rules2: "Suitable for young children (2-12 years old)"
+      rules3: "Accept pets"
+      rules4: "Smoking is allowed"
+      rules5: "Party allowed"
+      checkin-time: "Check-in time"
+      all: 'Whole house'
+      private: 'Private room'
+      general: 'General room'
+    show:
+      room: "rooms"
+      bed: "beds"
+      bath: "bathroom"
+      guest: "guests"
+      host: "Host"
+      new: 'New'
+      furniture: 'Space can use'
+      convenient: 'Convenient'
+      rules: 'Rules'

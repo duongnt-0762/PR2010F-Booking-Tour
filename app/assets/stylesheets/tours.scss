@@ -101,7 +101,7 @@
   flex-wrap: wrap;
 }
 .content-tour-i{
-  width: 285px;
+  width: 280px;
   box-sizing:border-box;
   padding-top: 30px;
   padding-left: 8px;
@@ -326,4 +326,38 @@ padding: 8px;
   font-weight: 400;
   line-height: 20px;
   padding: 8px;
+}
+// become a host
+.bchost{
+  padding-top: 50px;
+}
+.host{
+  display:table;
+  max-width: 900px;
+  display: flex;
+  margin: auto;
+
+}
+.hostpb{
+  flex: 40%;
+  display: flex;
+  width: 360px;
+  height: 250px;
+  margin: 60px 30px 0px;
+  border: 1px solid rgb(220, 224, 224);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+._d6tm0n{
+  margin: auto;
+  border: 1px solid rgb(176, 176, 176);
+  background-color: rgb(255, 255, 255);
+  padding: 26px;
+  position: relative;
+}
+.hostpa{
+  flex: 60%;
+  padding: 30px;
+  // width: 300px;
 }

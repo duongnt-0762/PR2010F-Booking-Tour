@@ -1,0 +1,70 @@
+<div id="host">
+  <%= render 'host'%>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="fr4mbd">
+          <div class="index-tours-sheet">
+            <section class="secs">
+              <span class="font-title"><%= @tour.title %></span>
+              <div class="adr">
+                <div class="star"><img src="../../assets/star.svg" width="15px"height="15px"></div>
+                <% if @tour.rates.any? %>
+                  <div class="font-content-r"><%= @total %></div>
+                  <div class="font-content-s">(<%= @tour.rates.count %>)</div>
+                  <div class="font-content-d"><%= @tour.address %></div>
+                <%else%>
+                  <div class="font-content-r">(New)</div>
+                  <div class="font-content-d"><%= @tour.address %></div>
+                <%end%>
+              </div>
+            </section>
+            <section class="secs">
+              <div class="container-f">
+                <div class="z1">
+                  <div class="z1i">
+                    <%= image_tag @tour.image if @tour.image.attached? %>
+              </div>
+            </section>
+            <section class="secs">
+              <div class="container-s3">
+                <div class="pA">
+                  <div class="pA1">
+                    <div class="pA80">
+                      <div class="pA801"><%= @tour.house_type%><span>. Chủ nhà: <%=@tour.user.name%></span></div>
+                      <div class="pA802"><%= @tour.guest%> khách - <%= @tour.room%> phòng - <%= @tour.bed%> giường - <%= @tour.bathroom%> phòng tắm </div>
+                    </div>
+                    <div class="pA20">
+                      <div class="ava"><%= link_to gravatar_for(current_user, size:56)%></div>
+                    </div>
+                  </div>
+                  <div class="pAi">
+                    <%= @tour.description%>
+                  </div>
+                  <div class="pAi">
+                    <h3 tabindex="-1">Không gian có thể sử dụng</h3>
+                    <%= @tour.furniture%>
+                  </div>
+                  <div class="pAi">
+                    <h3 tabindex="-1" >Tiện nghi</h3>
+                    <%= @tour.convenient%>
+                  </div>
+                  <div class="pAi">
+                    <h3 tabindex="-1" >Những điều cần biết</h3>
+                    <span><%= @tour.rules%></span>
+                    <span>Thời gian nhận phòng </span><%= @tour.content%>
+                  </div>
+                </div>
+                <div class="pAi">
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

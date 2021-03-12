@@ -1,6 +1,8 @@
 class Admin::StaticPagesController < ApplicationController
   before_action  :check_admin
   def index
+    @new_tours = Tour.draft
+    @new_requests = Request.not_set
   end
 
   def help

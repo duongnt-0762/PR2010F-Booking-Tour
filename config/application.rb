@@ -11,6 +11,6 @@ module PR2010FBookingTour
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
     config.i18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :vi
-
+    config.active_storage.replace_on_assign_to_many = false
   end
 end

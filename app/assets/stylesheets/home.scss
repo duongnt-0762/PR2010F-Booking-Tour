@@ -1,3 +1,29 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.convenient-f{
+  display: flex;
+}
+input[type="checkbox"] {
+  width: 23px;
+}
+input[type="radio"]{
+    box-sizing: border-box;
+    margin: 3px 10px 8px;
+}
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+.field_with_errors {
+  .form-control {
+    color: red;
+  }
+}
+.tack{
+  display: flex;
+  justify-content:space-between;
+}

@@ -9,7 +9,6 @@ class Admin::RequestsController < ApplicationController
   def show
   end
 
-
   def update
     status = params[:status] + "!"
     @request.send(status)
